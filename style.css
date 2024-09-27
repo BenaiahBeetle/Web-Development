@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Using a simple and readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1eb; /* Soft beige background for an earthy tone */
+    color: #333; /* Neutral text color */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #5b4033; /* Dark brown background for contrast */
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px;
+    text-align: center; /* Center all text */
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 600px; /* Limit the width for better readability */
+    color: #f9f4ef; /* Light text to contrast the dark background */
+}
+
+/* Main Heading */
+.hero h1 {
+    font-size: 4rem; /* Large font size for main emphasis */
+    margin-bottom: 10px; /* Small space below heading */
+    font-weight: bold; /* Bold font for a strong presence */
+}
+
+/* Subheading */
+.hero h2 {
+    font-size: 2rem; /* Medium font size for subheading */
+    margin-bottom: 20px; /* Space between subheading and paragraph */
+    color: #d4bbaa; /* Softer shade of beige to complement the background */
+}
+
+/* Description Paragraph */
+.hero p {
+    font-size: 1.2rem; /* Slightly larger font for easy reading */
+    margin-bottom: 30px; /* Space between paragraph and button */
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: #6b8f71; /* Soft green for a calm, natural feel */
+    color: white; /* White text for contrast */
+    padding: 15px 30px; /* Extra padding for a button-like appearance */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for a friendly look */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+    background-color: #3f634d; /* Darker green on hover for feedback */
+}
