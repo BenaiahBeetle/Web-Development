@@ -5,14 +5,20 @@ body {
     padding: 0;
     background-color: #0b0b45;
     color: #fff;
+    padding-top: 80px;
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 0;
     background-color: #340782;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   .logo {
@@ -116,6 +122,33 @@ body {
     font-size: 1.2rem;
     color: #cfcfcf;
   }
+
+  #projects ul {
+    text-align: left;
+
+  }
+
+  #vision {
+    padding: 50px 20px;
+    background-color: #391c89;
+    text-align: center;
+  }
+  
+  #vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  #choose {
+    padding: 50px 20px;
+    background-color: #3c31be;
+    text-align: center;
+
+  }
+  #choose h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
   
   /* Footer */
   footer {
@@ -124,4 +157,36 @@ body {
     text-align: center;
     color: #fff;
   }
+
+  /* Styles for the Image Gallery */
+.image-gallery {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: #29298b; /* Optional background for the gallery */
+  }
+  
+  .image-track {
+    display: flex;
+    gap: 20px; /* Space between images */
+    animation: scroll 30s linear infinite;
+  }
+  
+  .image-track img {
+    width: 200px; /* Adjust the width of each image */
+    height: auto;
+    border-radius: 10px; /* Optional: add rounded corners to images */
+    object-fit: cover;
+  }
+  
+  /* Animation for continuous scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
   
