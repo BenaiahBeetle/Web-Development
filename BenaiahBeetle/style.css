@@ -130,7 +130,7 @@ body {
 
   #vision {
     padding: 50px 20px;
-    background-color: #391c89;
+    background:url('futuristic.png') no-repeat center center/cover;
     text-align: center;
   }
   
