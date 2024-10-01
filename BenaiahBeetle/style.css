@@ -158,35 +158,34 @@ body {
     color: #fff;
   }
 
-  /* Styles for the Image Gallery */
+/* Styles for the Image Gallery */
 .image-gallery {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px 0;
-    background-color: #29298b; /* Optional background for the gallery */
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: #f4f4f4; /* Optional background for the gallery */
+}
+
+.image-track {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: scroll 30s linear infinite;
+}
+
+.image-track img {
+  width: 200px; /* Adjust the width of each image */
+  height: auto;
+  border-radius: 10px; /* Optional: add rounded corners to images */
+  object-fit: cover;
+}
+
+/* Animation for continuous scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
   }
-  
-  .image-track {
-    display: flex;
-    gap: 20px; /* Space between images */
-    animation: scroll 30s linear infinite;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .image-track img {
-    width: 250px; /* Adjust the width of each image */
-    height: auto;
-    border-radius: 10px; /* Optional: add rounded corners to images */
-    object-fit: cover;
-  }
-  
-  /* Animation for continuous scrolling */
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  
+}
+
