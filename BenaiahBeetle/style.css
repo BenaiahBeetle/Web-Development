@@ -109,8 +109,10 @@ body {
   /* Projects Section */
   #projects {
     padding: 50px 20px;
-    background-color: #29298b;
+    backdrop-filter: blur(10px); /* Apply a 10px blur to the background */
+    background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
+    background:url('images/futuristic.png') no-repeat center center/cover;
   }
   
   #projects h2 {
@@ -130,8 +132,15 @@ body {
 
   #vision {
     padding: 50px 20px;
-    background:url('futuristic.png') no-repeat center center/cover;
+    background:url('images/futuristic.png') no-repeat bottom center/cover;
     text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left */
+        1px -1px 0 black,   /* Top-right */
+        -1px 1px 0 black,   /* Bottom-left */
+        1px 1px 0 black;
   }
   
   #vision h2 {
