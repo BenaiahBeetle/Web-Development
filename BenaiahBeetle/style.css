@@ -163,6 +163,10 @@ body {
     margin-bottom: 20px;
   }
   
+  #choose ul {
+    text-align: left;
+  }
+  
   /* Footer */
   footer {
     padding: 20px;
