@@ -109,10 +109,14 @@ body {
   /* Projects Section */
   #projects {
     padding: 50px 20px;
-    backdrop-filter: blur(10px); /* Apply a 10px blur to the background */
-    background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
     background:url('images/futuristic.png') no-repeat center center/cover;
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left */
+        1px -1px 0 black,   /* Top-right */
+        -1px 1px 0 black,   /* Bottom-left */
+        1px 1px 0 black;
   }
   
   #projects h2 {
@@ -172,7 +176,8 @@ body {
   width: 100%;
   overflow: hidden;
   padding: 20px 0;
-  background-color: #29298b; /* Optional background for the gallery */
+  backdrop-filter: blur(5px); /* Apply a 10px blur to the background */
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .image-track {
