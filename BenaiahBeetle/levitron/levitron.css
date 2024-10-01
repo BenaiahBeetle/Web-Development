@@ -61,3 +61,55 @@ p {
 .cta-button:hover {
     background-color: #1d5db7;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #340782;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-right: 15px; /* Space between logo and company name */
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+
+/* Animation for continuous scrolling */
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
