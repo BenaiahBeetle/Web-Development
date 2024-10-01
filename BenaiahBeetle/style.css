@@ -55,7 +55,7 @@ body {
   /* Hero Section */
   #hero {
     height: 100vh;
-    background: url('Gemini_Generated_Image_qe0anoqe0anoqe0a.jpeg') no-repeat center center/cover; /* Replace with your image */
+    background: url('images/Gemini_Generated_Image_qe0anoqe0anoqe0a.jpeg') no-repeat center center/cover; /* Replace with your image */
     display: flex;
     flex-direction: column;
     justify-content: center;
