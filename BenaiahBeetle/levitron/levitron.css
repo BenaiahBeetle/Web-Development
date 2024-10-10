@@ -67,7 +67,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    background-color: #340782;
+    background: url('/BenaiahBeetle/images/Header.jpg') no-repeat center center/cover;
     position: fixed;
     top: 0;
     width: 100%;
