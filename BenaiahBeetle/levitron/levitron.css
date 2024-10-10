@@ -10,12 +10,15 @@ body, html {
     height: 100vh;
     background-image: url('A_futuristic_car,_the_Levitron,_hovering_without_w.png'); /* Background image */
     background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
     display: flex;
     justify-content: center;
     align-items: center;
     color: lightcyan;
     text-align: center;
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed; /* Make the background fixed for a parallax effect */
+    position: relative;
+    padding-top: 60px;
 }
 
 /* Content inside the hero section */
@@ -23,6 +26,8 @@ body, html {
     background-color: rgba(0, 0, 0, 0.6); /* Dark overlay to improve text readability */
     padding: 20px;
     border-radius: 8px;
+    position: relative;
+    z-index: 10
 }
 
 /* Main heading */
