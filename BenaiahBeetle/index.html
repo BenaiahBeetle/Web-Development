@@ -18,13 +18,14 @@
     <nav>
       <ul>
         <li><a href="#hero">Home</a></li>
-        <li class="dropdown"> <!--ADD FORM TAB INSTEAD OF "DROPDOWN"-->
-          <a href="#projects">Projects</a>
-          <ul class="dropdown-content">
-            <!--<li><a href="levitron/levitron.html">Levitron</a></li>
-            <li><a href="project2.html">Project 2</a></li>
-            <li><a href="project3.html">Project 3</a></li>-->
-          </ul>
+        <li>
+          <label for="projects">Projects:</label>
+          <select id="projects" name="projects" onchange="location = this.value;">
+            <option value="">--Select a project--</option>
+            <option value="levitron/levitron.html">Levitron</option>
+            <option value="project2.html">Project 2</option>
+            <option value="project3.html">Project 3</option>
+          </select>
         </li>
         <li><a href="#about">About</a></li>
       </ul>
@@ -46,7 +47,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="project">
     <h2>Projects</h2>
     <p>Check out our cutting-edge projects that are revolutionizing industries.</p>
     <ul>

@@ -57,6 +57,21 @@ body {
     
   }
   
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff00cc;
+    color: #fff;
+    border: 1px solid #99009b;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
   /* Hero Section */
   #hero {
     height: 100vh;
@@ -112,7 +127,7 @@ body {
   }
   
   /* Projects Section */
-  #projects {
+  #project {
     padding: 50px 20px;
     text-align: center;
     background:url('images/futuristic.png') no-repeat center center/cover;
@@ -124,17 +139,17 @@ body {
         1px 1px 0 black;
   }
   
-  #projects h2 {
+  #project h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
   
-  #projects p {
+  #project p {
     font-size: 1.2rem;
     color: #cfcfcf;
   }
 
-  #projects ul {
+  #project ul {
     text-align: left;
 
   }
