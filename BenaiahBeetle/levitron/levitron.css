@@ -109,6 +109,12 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    background-color: #ff00cc;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: #ff00cc;
+    padding: 10px 20px;
+    margin-top: 20px;
   }
   
 /* Animation for continuous scrolling */
