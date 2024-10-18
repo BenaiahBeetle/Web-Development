@@ -1,8 +1,16 @@
 body {
     font-family: 'Playwrite Australia Victoria', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url()
+    margin: 50px;
+    padding: 50px;
+    background: url('/Campaign/images/PRC.png');
     color: #fff;
-    padding-top: 80px;
+    padding-top: 100px;
   }
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
