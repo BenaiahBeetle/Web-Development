@@ -1,14 +1,63 @@
-body {
-    font-family: 'Cookie', cursive;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background: url('/Campaign/images/Brock.webp') 
-        no-repeat center center fixed;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Cookie', cursive;
+    background: url('/Campaign/images/Brock.webp') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
+    color: white;
     padding-top: 80px;
 }
 
+/* Header and Navbar */
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: darkred;
+}
+
+/* Hero Section */
 #hero {
     height: 100vh;
     display: flex;
@@ -16,25 +65,36 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
-#hero h1 {
+/* American Flag Text Effect */
+.flag-text {
     font-size: 5rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
-    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png');
+    background-position: center;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(81, 81, 81, 0.7);
+    backdrop-filter: blur(5px); /* Apply a 10px blur to the background */
+    background-color: rgba(176, 176, 176, 0.3);
+    width: 50%;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
+/* Subheadline Text */
 #hero p {
-    font-size: 3rem;  /* Increased size for better visibility */
+    font-size: 2.5rem;
     margin: 15px 0;
-    text-shadow: 
-        0 0 10px rgba(255, 0, 0, 0.8),  /* Green glow */
-        0 0 20px rgba(158, 0, 0, 0.6), 
-        0 0 30px rgba(90, 0, 0, 0.4);  /* Layered glow effect */
-    color: white;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
 }
 
+/* Button Styling */
 .show-more {
     margin-top: 15px;
     padding: 12px 25px;
@@ -42,10 +102,56 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.5rem;
     transition: background-color 0.3s ease;
-    font-size: 1.25rem;
 }
 
 .show-more:hover {
     background-color: darkblue;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero p {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying Fade-in to Elements */
+.fade-in {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.fade-in.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.fade-in.delay-2 {
+    animation-delay: 1s;
 }
