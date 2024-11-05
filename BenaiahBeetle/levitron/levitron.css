@@ -1,13 +1,17 @@
 /* General styles for the page */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Hero section styling */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
     background-image: url('A_futuristic_car,_the_Levitron,_hovering_without_w.png'); /* Background image */
     background-size: cover; /* Ensures the image covers the entire section */
     display: flex;
@@ -19,6 +23,8 @@ body, html {
     background-attachment: fixed; /* Make the background fixed for a parallax effect */
     position: relative;
     padding-top: 60px;
+    background-attachment: fixed; /* Fixed background for parallax */
+    position: relative;
 }
 
 /* Content inside the hero section */
@@ -39,9 +45,10 @@ h1 {
 }
 
 /* Subheading */
-h2 {
+.hero h2{
     font-size: 2rem;
     margin: 10px 0;
+    color:azure
 }
 
 /* Description text */
@@ -116,6 +123,49 @@ header {
     padding: 10px 20px;
     margin-top: 20px;
   }
+  
+  section:not(.hero) {
+    padding: 2em 1em;
+    margin: 1em auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: #ffd700;
+    margin-bottom: 0.5em;
+}
+
+p, ul {
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1.5em;
+}
+
+a {
+    color: #00c4ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1e1e1e;
+    color: #666;
+}
   
 /* Animation for continuous scrolling */
 @keyframes scroll {
