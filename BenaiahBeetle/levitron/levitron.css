@@ -19,7 +19,7 @@ body, html {
     align-items: center;
     color: lightcyan;
     text-align: center;
-    background-position: center center; /* Center the background image */
+    background-position: 10% 40%;  /* Center the background image */
     background-attachment: fixed; /* Make the background fixed for a parallax effect */
     position: relative;
     padding-top: 60px;
@@ -37,7 +37,7 @@ body, html {
 }
 
 /* Main heading */
-h1 {
+.hero h1 {
     font-size: 4rem;
     margin: 0;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ h1 {
 }
 
 /* Description text */
-p {
+.hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: aqua;
@@ -71,7 +71,9 @@ p {
 
 /* Hover effect for the button */
 .cta-button:hover {
-    background-color: #1d5db7;
+    background-color: #154b96;
+    text-decoration: none;
+    
 }
 
 header {
