@@ -162,6 +162,24 @@ a:hover {
     text-decoration: underline;
 }
 
+.image-with-caption {
+  text-align: center; /* Center-aligns the image and caption */
+  max-width: 400px; /* Sets a max width to control the image size */
+  margin: 0 auto; /* Centers the figure container on the page */
+}
+
+.image-with-caption img {
+  width: 100%;
+  height: auto;
+}
+
+.image-with-caption figcaption {
+  font-size: 0.9em; /* Adjusts font size of the caption */
+  color: #555; /* Changes caption color */
+  margin-top: 5px;
+}
+
+
 footer {
     text-align: center;
     padding: 1em;
