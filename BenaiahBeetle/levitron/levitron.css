@@ -105,16 +105,16 @@ header {
     color: white;
   }
   
-  nav ul {
+  header ul {
     list-style-type: none;
     display: flex;
   }
   
-  nav ul li {
+  header nav ul li {
     margin: 0 20px;
   }
   
-  nav ul li a {
+  header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
