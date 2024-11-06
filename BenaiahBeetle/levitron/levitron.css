@@ -195,6 +195,10 @@ a:hover {
   height: 100%;
 }
 
+.prototype {
+  width: 600px; /* Adjust width as needed */
+  height: auto; /* This will keep the aspect ratio */
+}
 
 footer {
     text-align: center;
