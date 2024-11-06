@@ -162,6 +162,16 @@ a:hover {
     text-decoration: underline;
 }
 
+#technical-research {
+  padding-top: 100px;/* Adjust this value based on the header height */
+}
+
+#timeline{
+  padding-top: 100px;
+
+}
+
+
 .image-with-caption {
   text-align: center; /* Center-aligns the image and caption */
   max-width: 400px; /* Sets a max width to control the image size */
@@ -207,13 +217,5 @@ footer {
     color: #666;
 }
   
-/* Animation for continuous scrolling */
-@keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+
   
