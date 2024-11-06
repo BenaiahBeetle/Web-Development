@@ -61,7 +61,7 @@ body, html {
 /* Call-to-action button */
 .cta-button {
     padding: 12px 30px;
-    background-color: #1d5db7; /* Green button */
+    background-color: #1d5db7; 
     color: white;
     text-decoration: none;
     font-size: 1rem;
@@ -163,7 +163,7 @@ a:hover {
 }
 
 #technical-research {
-  padding-top: 100px;/* Adjust this value based on the header height */
+  padding-top: 100px;
 }
 
 #timeline{
@@ -206,7 +206,7 @@ a:hover {
 }
 
 .prototype {
-  width: 600px; /* Adjust width as needed */
+  width: 600px; 
   height: auto; /* This will keep the aspect ratio */
 }
 
