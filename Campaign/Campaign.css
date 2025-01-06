@@ -8,7 +8,7 @@
 /* Body Styles */
 body {
     font-family: 'Cookie', cursive;
-    background: url('/Campaign/images/Brock.webp') no-repeat center center fixed;
+    background: url('/Campaign/Brock.webp') no-repeat center center fixed;
     background-size: cover;
     color: white;
     padding-top: 80px;
